@@ -1,0 +1,10 @@
+The sql_installation_script.sh script is available to help you install and setup the database, and it is highly recommended to use it !
+It has been only been tested on arch and a bit on debian, but should work on *suse and centOS and debian derivatives. You can check the script and modify it if you think it's necessary.
+
+
+Anyway, you need to install the mariadb server, it's most likely called either mariadb or mariadb-server in your distribution's repos, then start the service and enable it !
+It's the first step of the script, you can skip this part if mariadb is already up and running.
+
+You then need to setup the root user and initialize the database with the needed tables, you can do so by running the second step of the script. If you have just installed mariadb and are just willing to try out the webapp, use "root" as a root password. Otherwise, setup the password you want (or use your already existing password) and modify the password used in the source code in the WebMvcConfig.java file, the getDataSource function. Don't change the ip address though (localhost).
+
+You should now be good to go !

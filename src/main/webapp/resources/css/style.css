@@ -1,0 +1,72 @@
+body > header, body > footer {
+    background-image: url('../img/background_bluepolygon.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+body > footer {
+    min-height: 7rem;
+}
+
+body > footer a {
+    color: white;
+}
+
+.card, .form-control, .btn {
+    border-radius: 0;
+}
+
+.list-triangle {
+    padding: 0 1em;
+    list-style: none;
+}
+.list-triangle > li:before {
+    content: "";
+    border-color: transparent black;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 0.9em;
+    position: relative;
+}
+
+.btn-outline {
+    color: white;
+    background-image: none;
+    background-color: transparent;
+    border-color: white;
+}
+.btn-outline:hover {
+    color: black;
+    background-color: white;
+}
+
+.media > img {
+    width: 150px;
+    height: auto;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, .8) !important;
+}
+
+.nav-link:hover {
+    color: white !important;
+}
+
+kbd {
+    line-height: 2;
+}
+
+.card-body {
+    transition: all 500ms ease;
+}
+.card-body:hover {
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 15px 0 rgba(0,0,0,0.19);
+}
